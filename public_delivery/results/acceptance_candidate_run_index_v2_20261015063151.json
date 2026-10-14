@@ -1,0 +1,1349 @@
+{
+  "tag": "20261015063151",
+  "generated_at": "2026-10-14T22:31:51.361148+00:00",
+  "note": "Layered candidate-run evidence index (v2). Distinguishes a referenced run ID index from candidate execution records; execution-result records, receipt-verification-only records, replay-reference-only records, and other/conflict records are mutually exclusive layers. Stop/rejection/exception/terminal-state observations are listed separately. Independent-route task attribution is annotated with code evidence, not silently overwritten. candidate=0.0 is preserved verbatim from sections.active_verify_after_restart.verify. This is NOT a model-effect pass rate; it is a read-only evidence index. No new solves, model calls, or AGH host tool calls were made in this round. Fee remains UNKNOWN.",
+  "supersedes": [
+    "private_runs/acceptance_run_index_20261015060904.json",
+    "private_runs/acceptance_statistics_relayered_20261015055010.json"
+  ],
+  "input_files": {
+    "acc_integration_normal_20261015042620.json": {
+      "sha256": "aa1a2dab17d86ccc7db569e48229ba6a561585e3eec9d1c1dec36585848c5838"
+    },
+    "acc_integration_zero_candidate_20261015042620.json": {
+      "sha256": "9759998a79a8aefa4713f3bf207ac29d869cf739a748a3367f52a09db344dad1"
+    },
+    "acc_root_normal_20261015042620.json": {
+      "sha256": "ea178fcef7cebc2087335178827dc144e72b65ae18e5fa2099c39f208388559a"
+    },
+    "acc_root_tight_20261015042620.json": {
+      "sha256": "091baac7307065d17b075b2f8629b56341853e91e5a58f66a89164fafd938df6"
+    },
+    "acc_linsys_normal_20261015042620.json": {
+      "sha256": "949b6dfb0ba0948e7ffe27547e4f2091629860d7a924dfbe0dde44f3cbf7310b"
+    },
+    "acc_linsys_no_unique_20261015042620.json": {
+      "sha256": "76db0cf544dae66fc134c6d3899e2872b64d6989df5aaed3a464d86fb9d28189"
+    },
+    "acc_linsys_ultra_tight_20261015042620.json": {
+      "sha256": "f48b4e184f5d073d03006cfbf90abb4f80a8f8759a006fd1999be5708db15bff"
+    },
+    "ode_stability_feec260053604a99bd12b37b25a40c2f.json": {
+      "sha256": "bb3a18bd20259bfff4b05e2dda5ad8b04e1841d1c2fe8fbf9a0e92a2b5f2fbd2"
+    },
+    "acc_cross_session_20261015042632.json": {
+      "sha256": "1634e5dafae4b529e260d6073d4e78b14813b0768fcedbcd7c42fe512a430da9"
+    },
+    "acc_budget_exhaust_20261015042633.json": {
+      "sha256": "0f1cdd90135b42695eac7855f9a635001e1c199d705ae8eff16e2d79135b471b"
+    },
+    "acc_restart_20261015042635.json": {
+      "sha256": "70c6565efe543e81f7f51721c9ac84e29a217a97f56b29549ee857d69c2119cc"
+    }
+  },
+  "distinct_referenced_run_ids": 26,
+  "layer_counts": {
+    "execution_result_record": 23,
+    "replay_reference_only": 1,
+    "receipt_verification_only": 2
+  },
+  "verdict_by_layer": {
+    "execution_result_record": {
+      "VERIFIED_INCORRECT": 8,
+      "VERIFIED_PASS": 15
+    },
+    "replay_reference_only": {
+      "VERDICT_MISSING": 1
+    },
+    "receipt_verification_only": {
+      "VERIFIED_PASS": 1,
+      "VERIFIED_INCORRECT": 1
+    }
+  },
+  "layer_detail": {
+    "execution_result_record": [
+      {
+        "run_id": "run-02d8c96d-583c-4e92-a76f-954e85d22e46",
+        "source_files": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json"
+        ],
+        "paths": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[0].execute_fail"
+        ]
+      },
+      {
+        "run_id": "run-0f8c60d7-c4c3-4cb0-9253-27306e7c25d1",
+        "source_files": [
+          "acc_integration_zero_candidate_20261015042620.json"
+        ],
+        "paths": [
+          "acc_integration_zero_candidate_20261015042620.json::events[0].payload",
+          "acc_integration_zero_candidate_20261015042620.json::verify_zero"
+        ]
+      },
+      {
+        "run_id": "run-27130b38-0c04-4d7c-8098-84878930d899",
+        "source_files": [
+          "acc_root_normal_20261015042620.json"
+        ],
+        "paths": [
+          "acc_root_normal_20261015042620.json::events[0].payload"
+        ]
+      },
+      {
+        "run_id": "run-2eac6b5e-b752-4067-bff1-bd3d290a5320",
+        "source_files": [
+          "acc_linsys_normal_20261015042620.json"
+        ],
+        "paths": [
+          "acc_linsys_normal_20261015042620.json::events[0].payload"
+        ]
+      },
+      {
+        "run_id": "run-37f99deb-487d-4d21-829f-9e14550cc7bd",
+        "source_files": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json"
+        ],
+        "paths": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[0].execute_pass",
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[0].verify_pass"
+        ]
+      },
+      {
+        "run_id": "run-39a0deac-4979-47dc-88f9-e75efcd74f1d",
+        "source_files": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json"
+        ],
+        "paths": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[2].execute_fail"
+        ]
+      },
+      {
+        "run_id": "run-4028708f-cad8-4da6-bf34-57a97dd6fa2a",
+        "source_files": [
+          "acc_linsys_normal_20261015042620.json"
+        ],
+        "paths": [
+          "acc_linsys_normal_20261015042620.json::events[2].payload"
+        ]
+      },
+      {
+        "run_id": "run-62d6c0e2-22d7-41d7-9cca-e193181a4df6",
+        "source_files": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json"
+        ],
+        "paths": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[5].execute",
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[5].verify"
+        ]
+      },
+      {
+        "run_id": "run-68cba19e-a9b0-459d-b430-1060698b774b",
+        "source_files": [
+          "acc_root_tight_20261015042620.json"
+        ],
+        "paths": [
+          "acc_root_tight_20261015042620.json::events[1].payload"
+        ]
+      },
+      {
+        "run_id": "run-70cb64ef-0fa7-4281-8c01-ed78cd201546",
+        "source_files": [
+          "acc_root_tight_20261015042620.json"
+        ],
+        "paths": [
+          "acc_root_tight_20261015042620.json::events[0].payload"
+        ]
+      },
+      {
+        "run_id": "run-71527133-de2a-4b8d-8561-db58d6345027",
+        "source_files": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json"
+        ],
+        "paths": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[3].execute",
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[3].verify"
+        ]
+      },
+      {
+        "run_id": "run-88154b3a-903b-42f9-a576-6fc236ccc368",
+        "source_files": [
+          "acc_restart_20261015042635.json"
+        ],
+        "paths": [
+          "acc_restart_20261015042635.json::sections.reopened_new_task.repair_run"
+        ]
+      },
+      {
+        "run_id": "run-8da5eac7-d2e4-47dd-8da3-60a4f8eb83ed",
+        "source_files": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json"
+        ],
+        "paths": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[2].execute_pass",
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[2].verify_pass"
+        ]
+      },
+      {
+        "run_id": "run-9653cf4d-fa6f-4f9a-8129-eb652c2d226f",
+        "source_files": [
+          "acc_root_normal_20261015042620.json"
+        ],
+        "paths": [
+          "acc_root_normal_20261015042620.json::events[2].payload"
+        ]
+      },
+      {
+        "run_id": "run-9ed4d799-b456-4f10-8a4c-ac557094553e",
+        "source_files": [
+          "acc_linsys_normal_20261015042620.json"
+        ],
+        "paths": [
+          "acc_linsys_normal_20261015042620.json::events[1].payload",
+          "acc_linsys_normal_20261015042620.json::verify_np64"
+        ]
+      },
+      {
+        "run_id": "run-ae661aba-44b7-4ce7-b213-ef6ebdf31eb7",
+        "source_files": [
+          "acc_integration_normal_20261015042620.json"
+        ],
+        "paths": [
+          "acc_integration_normal_20261015042620.json::events[1].payload",
+          "acc_integration_normal_20261015042620.json::verify_run2"
+        ]
+      },
+      {
+        "run_id": "run-b9e613c3-987a-4554-b32c-a1c9b4a892be",
+        "source_files": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json"
+        ],
+        "paths": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[4].execute_pass",
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[4].verify_pass"
+        ]
+      },
+      {
+        "run_id": "run-c60254a0-4cf3-455b-8dc8-240bf7d118f1",
+        "source_files": [
+          "acc_cross_session_20261015042632.json"
+        ],
+        "paths": [
+          "acc_cross_session_20261015042632.json::events[0].payload"
+        ]
+      },
+      {
+        "run_id": "run-c7c7dbb6-f928-46f9-bbac-b19b615d8422",
+        "source_files": [
+          "acc_root_normal_20261015042620.json"
+        ],
+        "paths": [
+          "acc_root_normal_20261015042620.json::events[1].payload",
+          "acc_root_normal_20261015042620.json::verify_brent"
+        ]
+      },
+      {
+        "run_id": "run-d1d50f02-1a67-4126-bf90-4133c8504802",
+        "source_files": [
+          "acc_integration_normal_20261015042620.json"
+        ],
+        "paths": [
+          "acc_integration_normal_20261015042620.json::events[0].payload",
+          "acc_integration_normal_20261015042620.json::events[2].payload"
+        ]
+      },
+      {
+        "run_id": "run-e1390ec3-ce72-4855-96b8-9ce67408a185",
+        "source_files": [
+          "acc_linsys_ultra_tight_20261015042620.json"
+        ],
+        "paths": [
+          "acc_linsys_ultra_tight_20261015042620.json::events[1].payload"
+        ]
+      },
+      {
+        "run_id": "run-fa97db37-db67-4739-a100-2fb2a3dc3e58",
+        "source_files": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json"
+        ],
+        "paths": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[1].execute",
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[1].verify"
+        ]
+      },
+      {
+        "run_id": "run-fb431c81-d145-4ab1-bef1-1e83e5521196",
+        "source_files": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json"
+        ],
+        "paths": [
+          "ode_stability_feec260053604a99bd12b37b25a40c2f.json::cases[4].execute_fail"
+        ]
+      }
+    ],
+    "replay_reference_only": [
+      {
+        "run_id": "run-290082a2-43ef-4492-890d-0f8d554d992a",
+        "source_files": [
+          "acc_budget_exhaust_20261015042633.json"
+        ],
+        "paths": [
+          "acc_budget_exhaust_20261015042633.json::sections.idempotency"
+        ]
+      }
+    ],
+    "receipt_verification_only": [
+      {
+        "run_id": "run-4eff41a8-c89d-4c1c-a38b-70de0da0c201",
+        "source_files": [
+          "acc_restart_20261015042635.json"
+        ],
+        "paths": [
+          "acc_restart_20261015042635.json::sections.terminal_verify_after_restart"
+        ]
+      },
+      {
+        "run_id": "run-c8181bcd-50e6-48a7-a73f-7a162ccbc245",
+        "source_files": [
+          "acc_restart_20261015042635.json"
+        ],
+        "paths": [
+          "acc_restart_20261015042635.json::sections.active_verify_after_restart.verify"
+        ]
+      }
+    ]
+  },
+  "run_index": [
+    {
+      "run_id": "run-02d8c96d-583c-4e92-a76f-954e85d22e46",
+      "session": "S-ode-stability",
+      "task_id": "ode-growth-diag",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 2.5937424601,
+      "action": "ode_euler10",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_INCORRECT",
+      "references": [
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[0].execute_fail",
+          "run_id": "run-02d8c96d-583c-4e92-a76f-954e85d22e46",
+          "kind": "execute",
+          "session": "S-ode-stability",
+          "task_id": "ode-growth-diag",
+          "action": "ode_euler10",
+          "candidate": 2.5937424601,
+          "verdict": "VERIFIED_INCORRECT",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-0f8c60d7-c4c3-4cb0-9253-27306e7c25d1",
+      "session": null,
+      "task_id": "task-zero-candidate",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 0.0,
+      "action": "quad_plain",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_integration_zero_candidate_20261015042620.json",
+          "path": "events[0].payload",
+          "run_id": "run-0f8c60d7-c4c3-4cb0-9253-27306e7c25d1",
+          "kind": "execute",
+          "session": null,
+          "task_id": "task-zero-candidate",
+          "action": "quad_plain",
+          "candidate": 0.0,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "acc_integration_zero_candidate_20261015042620.json",
+          "path": "verify_zero",
+          "run_id": "run-0f8c60d7-c4c3-4cb0-9253-27306e7c25d1",
+          "kind": "verify",
+          "session": null,
+          "task_id": "task-zero-candidate",
+          "action": null,
+          "candidate": 0.0,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-27130b38-0c04-4d7c-8098-84878930d899",
+      "session": "S1",
+      "task_id": "task-root-x-1-cubed",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 1.0006666666666666,
+      "action": "root_newton",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_INCORRECT",
+      "references": [
+        {
+          "file": "acc_root_normal_20261015042620.json",
+          "path": "events[0].payload",
+          "run_id": "run-27130b38-0c04-4d7c-8098-84878930d899",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-root-x-1-cubed",
+          "action": "root_newton",
+          "candidate": 1.0006666666666666,
+          "verdict": "VERIFIED_INCORRECT",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-290082a2-43ef-4492-890d-0f8d554d992a",
+      "session": null,
+      "task_id": "acc-idempotent",
+      "task_id_source": "record_top_level_task_field",
+      "candidate": null,
+      "action": null,
+      "evidence_layer": "replay_reference_only",
+      "verdict_class": "VERDICT_MISSING",
+      "references": [
+        {
+          "file": "acc_budget_exhaust_20261015042633.json",
+          "path": "sections.idempotency",
+          "run_id": "run-290082a2-43ef-4492-890d-0f8d554d992a",
+          "kind": "idempotent_reference",
+          "session": null,
+          "task_id": "acc-idempotent",
+          "action": null,
+          "candidate": null,
+          "verdict": null,
+          "idempotent_hit": true,
+          "note": "idempotent replay reference only; no original execution_result_record for this run in the 11-file set"
+        }
+      ]
+    },
+    {
+      "run_id": "run-2eac6b5e-b752-4067-bff1-bd3d290a5320",
+      "session": "S1",
+      "task_id": "task-ls-required",
+      "task_id_source": "nested_record_task_id",
+      "candidate": [
+        0.25,
+        0.75
+      ],
+      "action": "ls_np32",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_INCORRECT",
+      "references": [
+        {
+          "file": "acc_linsys_normal_20261015042620.json",
+          "path": "events[0].payload",
+          "run_id": "run-2eac6b5e-b752-4067-bff1-bd3d290a5320",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-ls-required",
+          "action": "ls_np32",
+          "candidate": [
+            0.25,
+            0.75
+          ],
+          "verdict": "VERIFIED_INCORRECT",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-37f99deb-487d-4d21-829f-9e14550cc7bd",
+      "session": "S-ode-stability",
+      "task_id": "ode-growth-diag",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 2.718281828457066,
+      "action": "ode_dop853",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[0].execute_pass",
+          "run_id": "run-37f99deb-487d-4d21-829f-9e14550cc7bd",
+          "kind": "execute",
+          "session": "S-ode-stability",
+          "task_id": "ode-growth-diag",
+          "action": "ode_dop853",
+          "candidate": 2.718281828457066,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[0].verify_pass",
+          "run_id": "run-37f99deb-487d-4d21-829f-9e14550cc7bd",
+          "kind": "verify",
+          "session": "S-ode-stability",
+          "task_id": "ode-growth-diag",
+          "action": null,
+          "candidate": 2.718281828457066,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-39a0deac-4979-47dc-88f9-e75efcd74f1d",
+      "session": "S-ode-stability",
+      "task_id": "ode-small-coeff-diag",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 2.000088900583341,
+      "action": "ode_closed_naive",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_INCORRECT",
+      "references": [
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[2].execute_fail",
+          "run_id": "run-39a0deac-4979-47dc-88f9-e75efcd74f1d",
+          "kind": "execute",
+          "session": "S-ode-stability",
+          "task_id": "ode-small-coeff-diag",
+          "action": "ode_closed_naive",
+          "candidate": 2.000088900583341,
+          "verdict": "VERIFIED_INCORRECT",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-4028708f-cad8-4da6-bf34-57a97dd6fa2a",
+      "session": "S1",
+      "task_id": "task-ls-required",
+      "task_id_source": "nested_record_task_id",
+      "candidate": [
+        "0.3333333333333333333333333333333333333333333",
+        "0.6666666666666666666666666666666666666666667"
+      ],
+      "action": "ls_decimal_high",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_linsys_normal_20261015042620.json",
+          "path": "events[2].payload",
+          "run_id": "run-4028708f-cad8-4da6-bf34-57a97dd6fa2a",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-ls-required",
+          "action": "ls_decimal_high",
+          "candidate": [
+            "0.3333333333333333333333333333333333333333333",
+            "0.6666666666666666666666666666666666666666667"
+          ],
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ],
+      "task_attribution": {
+        "recorded_in_index": "task-ls-required",
+        "code_inferred_independent_task_id": "task-ls-required-decimal-high",
+        "code_evidence": "scicheck_task_cli.py _lin_sys_flow registers high_id='task-ls-required-decimal-high' and calls execute_task(high_id,'req-1','ls_decimal_high')",
+        "record_evidence": "acc_linsys_normal_20261015042620.json events[2].payload does NOT contain a nested task_id; the record's top-level task='task-ls-required' is the ORIGINAL ls task, not the independent decimal-high-route task",
+        "note": "The record's top-level task field is the ORIGINAL task; the independent-route task id is known only from scicheck_task_cli.py source, not from a nested field in the record. Both are preserved; the code-inferred id is flagged, not silently substituted."
+      }
+    },
+    {
+      "run_id": "run-4eff41a8-c89d-4c1c-a38b-70de0da0c201",
+      "session": null,
+      "task_id": null,
+      "task_id_source": "not_recorded_in_any_reference",
+      "candidate": 0.33333333333333337,
+      "action": null,
+      "evidence_layer": "receipt_verification_only",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_restart_20261015042635.json",
+          "path": "sections.terminal_verify_after_restart",
+          "run_id": "run-4eff41a8-c89d-4c1c-a38b-70de0da0c201",
+          "kind": "terminal_verify",
+          "session": null,
+          "task_id": null,
+          "action": null,
+          "candidate": 0.33333333333333337,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-62d6c0e2-22d7-41d7-9cca-e193181a4df6",
+      "session": "S-ode-stability",
+      "task_id": "ode-large-origin-direct",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 1.0002,
+      "action": "ode_closed_stable",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[5].execute",
+          "run_id": "run-62d6c0e2-22d7-41d7-9cca-e193181a4df6",
+          "kind": "execute",
+          "session": "S-ode-stability",
+          "task_id": "ode-large-origin-direct",
+          "action": "ode_closed_stable",
+          "candidate": 1.0002,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[5].verify",
+          "run_id": "run-62d6c0e2-22d7-41d7-9cca-e193181a4df6",
+          "kind": "verify",
+          "session": "S-ode-stability",
+          "task_id": "ode-large-origin-direct",
+          "action": null,
+          "candidate": 1.0002,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-68cba19e-a9b0-459d-b430-1060698b774b",
+      "session": "S1",
+      "task_id": "task-root-shift-1-3-tight",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 0.33333333333332255,
+      "action": "root_brent",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_INCORRECT",
+      "references": [
+        {
+          "file": "acc_root_tight_20261015042620.json",
+          "path": "events[1].payload",
+          "run_id": "run-68cba19e-a9b0-459d-b430-1060698b774b",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-root-shift-1-3-tight",
+          "action": "root_brent",
+          "candidate": 0.33333333333332255,
+          "verdict": "VERIFIED_INCORRECT",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-70cb64ef-0fa7-4281-8c01-ed78cd201546",
+      "session": "S1",
+      "task_id": "task-root-shift-1-3-tight",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 0.3333333333333333,
+      "action": "root_direct",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_INCORRECT",
+      "references": [
+        {
+          "file": "acc_root_tight_20261015042620.json",
+          "path": "events[0].payload",
+          "run_id": "run-70cb64ef-0fa7-4281-8c01-ed78cd201546",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-root-shift-1-3-tight",
+          "action": "root_direct",
+          "candidate": 0.3333333333333333,
+          "verdict": "VERIFIED_INCORRECT",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-71527133-de2a-4b8d-8561-db58d6345027",
+      "session": "S-ode-stability",
+      "task_id": "ode-small-coeff-direct",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 2.0000000000015,
+      "action": "ode_closed_stable",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[3].execute",
+          "run_id": "run-71527133-de2a-4b8d-8561-db58d6345027",
+          "kind": "execute",
+          "session": "S-ode-stability",
+          "task_id": "ode-small-coeff-direct",
+          "action": "ode_closed_stable",
+          "candidate": 2.0000000000015,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[3].verify",
+          "run_id": "run-71527133-de2a-4b8d-8561-db58d6345027",
+          "kind": "verify",
+          "session": "S-ode-stability",
+          "task_id": "ode-small-coeff-direct",
+          "action": null,
+          "candidate": 2.0000000000015,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-88154b3a-903b-42f9-a576-6fc236ccc368",
+      "session": null,
+      "task_id": "acc-restart-reopened",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 1.0,
+      "action": "quad_breakpoints",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_restart_20261015042635.json",
+          "path": "sections.reopened_new_task.repair_run",
+          "run_id": "run-88154b3a-903b-42f9-a576-6fc236ccc368",
+          "kind": "repair_execute",
+          "session": null,
+          "task_id": "acc-restart-reopened",
+          "action": "quad_breakpoints",
+          "candidate": 1.0,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-8da5eac7-d2e4-47dd-8da3-60a4f8eb83ed",
+      "session": "S-ode-stability",
+      "task_id": "ode-small-coeff-diag",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 2.0000000000015,
+      "action": "ode_closed_stable",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[2].execute_pass",
+          "run_id": "run-8da5eac7-d2e4-47dd-8da3-60a4f8eb83ed",
+          "kind": "execute",
+          "session": "S-ode-stability",
+          "task_id": "ode-small-coeff-diag",
+          "action": "ode_closed_stable",
+          "candidate": 2.0000000000015,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[2].verify_pass",
+          "run_id": "run-8da5eac7-d2e4-47dd-8da3-60a4f8eb83ed",
+          "kind": "verify",
+          "session": "S-ode-stability",
+          "task_id": "ode-small-coeff-diag",
+          "action": null,
+          "candidate": 2.0000000000015,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-9653cf4d-fa6f-4f9a-8129-eb652c2d226f",
+      "session": "S1",
+      "task_id": "task-root-x-1-cubed",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 1.0,
+      "action": "root_direct",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_root_normal_20261015042620.json",
+          "path": "events[2].payload",
+          "run_id": "run-9653cf4d-fa6f-4f9a-8129-eb652c2d226f",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-root-x-1-cubed",
+          "action": "root_direct",
+          "candidate": 1.0,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ],
+      "task_attribution": {
+        "recorded_in_index": "task-root-x-1-cubed",
+        "code_inferred_independent_task_id": "task-root-direct-x-1-cubed",
+        "code_evidence": "scicheck_task_cli.py _root_flow registers direct_id='task-root-direct-x-1-cubed' and calls execute_task(direct_id,'req-d','root_direct')",
+        "record_evidence": "acc_root_normal_20261015042620.json events[2].payload does NOT contain a nested task_id; the record's top-level task='task-root-x-1-cubed' is the ORIGINAL root task, not the independent direct-route task",
+        "note": "The record's top-level task field is the ORIGINAL task; the independent-route task id is known only from scicheck_task_cli.py source, not from a nested field in the record. Both are preserved; the code-inferred id is flagged, not silently substituted."
+      }
+    },
+    {
+      "run_id": "run-9ed4d799-b456-4f10-8a4c-ac557094553e",
+      "session": "S1",
+      "task_id": "task-ls-required",
+      "task_id_source": "nested_record_task_id",
+      "candidate": [
+        0.33333333318530356,
+        0.6666666668146964
+      ],
+      "action": "ls_np64",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_linsys_normal_20261015042620.json",
+          "path": "events[1].payload",
+          "run_id": "run-9ed4d799-b456-4f10-8a4c-ac557094553e",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-ls-required",
+          "action": "ls_np64",
+          "candidate": [
+            0.33333333318530356,
+            0.6666666668146964
+          ],
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "acc_linsys_normal_20261015042620.json",
+          "path": "verify_np64",
+          "run_id": "run-9ed4d799-b456-4f10-8a4c-ac557094553e",
+          "kind": "verify",
+          "session": "S1",
+          "task_id": "task-ls-required",
+          "action": null,
+          "candidate": [
+            0.33333333318530356,
+            0.6666666668146964
+          ],
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-ae661aba-44b7-4ce7-b213-ef6ebdf31eb7",
+      "session": "S1",
+      "task_id": "task-piecewise-narrow",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 1.0,
+      "action": "quad_breakpoints",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_integration_normal_20261015042620.json",
+          "path": "events[1].payload",
+          "run_id": "run-ae661aba-44b7-4ce7-b213-ef6ebdf31eb7",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-piecewise-narrow",
+          "action": "quad_breakpoints",
+          "candidate": 1.0,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "acc_integration_normal_20261015042620.json",
+          "path": "verify_run2",
+          "run_id": "run-ae661aba-44b7-4ce7-b213-ef6ebdf31eb7",
+          "kind": "verify",
+          "session": "S1",
+          "task_id": "task-piecewise-narrow",
+          "action": null,
+          "candidate": 1.0,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-b9e613c3-987a-4554-b32c-a1c9b4a892be",
+      "session": "S-ode-stability",
+      "task_id": "ode-large-origin-diag",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 1.0002,
+      "action": "ode_closed_stable",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[4].execute_pass",
+          "run_id": "run-b9e613c3-987a-4554-b32c-a1c9b4a892be",
+          "kind": "execute",
+          "session": "S-ode-stability",
+          "task_id": "ode-large-origin-diag",
+          "action": "ode_closed_stable",
+          "candidate": 1.0002,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[4].verify_pass",
+          "run_id": "run-b9e613c3-987a-4554-b32c-a1c9b4a892be",
+          "kind": "verify",
+          "session": "S-ode-stability",
+          "task_id": "ode-large-origin-diag",
+          "action": null,
+          "candidate": 1.0002,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-c60254a0-4cf3-455b-8dc8-240bf7d118f1",
+      "session": null,
+      "task_id": null,
+      "task_id_source": "not_recorded_in_any_reference",
+      "candidate": 0.5,
+      "action": "quad_plain",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_cross_session_20261015042632.json",
+          "path": "events[0].payload",
+          "run_id": "run-c60254a0-4cf3-455b-8dc8-240bf7d118f1",
+          "kind": "execute",
+          "session": null,
+          "task_id": null,
+          "action": "quad_plain",
+          "candidate": 0.5,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-c7c7dbb6-f928-46f9-bbac-b19b615d8422",
+      "session": "S1",
+      "task_id": "task-root-x-1-cubed",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 1.0,
+      "action": "root_brent",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_root_normal_20261015042620.json",
+          "path": "events[1].payload",
+          "run_id": "run-c7c7dbb6-f928-46f9-bbac-b19b615d8422",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-root-x-1-cubed",
+          "action": "root_brent",
+          "candidate": 1.0,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "acc_root_normal_20261015042620.json",
+          "path": "verify_brent",
+          "run_id": "run-c7c7dbb6-f928-46f9-bbac-b19b615d8422",
+          "kind": "verify",
+          "session": "S1",
+          "task_id": "task-root-x-1-cubed",
+          "action": null,
+          "candidate": 1.0,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-c8181bcd-50e6-48a7-a73f-7a162ccbc245",
+      "session": null,
+      "task_id": "acc-restart-active",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 0.0,
+      "action": null,
+      "evidence_layer": "receipt_verification_only",
+      "verdict_class": "VERIFIED_INCORRECT",
+      "references": [
+        {
+          "file": "acc_restart_20261015042635.json",
+          "path": "sections.active_verify_after_restart.verify",
+          "run_id": "run-c8181bcd-50e6-48a7-a73f-7a162ccbc245",
+          "kind": "terminal_verify",
+          "session": null,
+          "task_id": "acc-restart-active",
+          "action": null,
+          "candidate": 0.0,
+          "verdict": "VERIFIED_INCORRECT",
+          "idempotent_hit": false,
+          "note": "candidate=0.0 read from nested verify block via direct key access, not truthiness"
+        }
+      ]
+    },
+    {
+      "run_id": "run-d1d50f02-1a67-4126-bf90-4133c8504802",
+      "session": "S1",
+      "task_id": "task-piecewise-narrow",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 0.0,
+      "action": "quad_plain",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_INCORRECT",
+      "references": [
+        {
+          "file": "acc_integration_normal_20261015042620.json",
+          "path": "events[0].payload",
+          "run_id": "run-d1d50f02-1a67-4126-bf90-4133c8504802",
+          "kind": "execute",
+          "session": "S1",
+          "task_id": "task-piecewise-narrow",
+          "action": "quad_plain",
+          "candidate": 0.0,
+          "verdict": "VERIFIED_INCORRECT",
+          "idempotent_hit": false
+        },
+        {
+          "file": "acc_integration_normal_20261015042620.json",
+          "path": "events[2].payload",
+          "run_id": "run-d1d50f02-1a67-4126-bf90-4133c8504802",
+          "kind": "replay",
+          "session": "S1",
+          "task_id": "task-piecewise-narrow",
+          "action": "quad_plain",
+          "candidate": 0.0,
+          "verdict": null,
+          "idempotent_hit": true
+        }
+      ]
+    },
+    {
+      "run_id": "run-e1390ec3-ce72-4855-96b8-9ce67408a185",
+      "session": null,
+      "task_id": "task-ls-ultra-tight",
+      "task_id_source": "nested_record_task_id",
+      "candidate": [
+        "0.3333333333333333333333333333333333333333333",
+        "0.6666666666666666666666666666666666666666667"
+      ],
+      "action": "ls_decimal_high",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "acc_linsys_ultra_tight_20261015042620.json",
+          "path": "events[1].payload",
+          "run_id": "run-e1390ec3-ce72-4855-96b8-9ce67408a185",
+          "kind": "execute",
+          "session": null,
+          "task_id": "task-ls-ultra-tight",
+          "action": "ls_decimal_high",
+          "candidate": [
+            "0.3333333333333333333333333333333333333333333",
+            "0.6666666666666666666666666666666666666666667"
+          ],
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ],
+      "task_attribution": {
+        "recorded_in_index": "task-ls-ultra-tight",
+        "code_inferred_independent_task_id": "task-ls-ultra-tight-decimal-high",
+        "code_evidence": "scicheck_task_cli.py _lin_sys_ultra_tight_flow registers high_id='task-ls-ultra-tight-decimal-high' and calls execute_task(high_id,'req-1','ls_decimal_high')",
+        "record_evidence": "acc_linsys_ultra_tight_20261015042620.json events[1].payload does NOT contain a nested task_id; the record's top-level task='task-ls-ultra-tight' is the ORIGINAL ultra-tight ls task, not the independent decimal-high-route task",
+        "note": "The record's top-level task field is the ORIGINAL task; the independent-route task id is known only from scicheck_task_cli.py source, not from a nested field in the record. Both are preserved; the code-inferred id is flagged, not silently substituted."
+      }
+    },
+    {
+      "run_id": "run-fa97db37-db67-4739-a100-2fb2a3dc3e58",
+      "session": "S-ode-stability",
+      "task_id": "ode-growth-direct",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 2.718281828457066,
+      "action": "ode_dop853",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_PASS",
+      "references": [
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[1].execute",
+          "run_id": "run-fa97db37-db67-4739-a100-2fb2a3dc3e58",
+          "kind": "execute",
+          "session": "S-ode-stability",
+          "task_id": "ode-growth-direct",
+          "action": "ode_dop853",
+          "candidate": 2.718281828457066,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        },
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[1].verify",
+          "run_id": "run-fa97db37-db67-4739-a100-2fb2a3dc3e58",
+          "kind": "verify",
+          "session": "S-ode-stability",
+          "task_id": "ode-growth-direct",
+          "action": null,
+          "candidate": 2.718281828457066,
+          "verdict": "VERIFIED_PASS",
+          "idempotent_hit": false
+        }
+      ]
+    },
+    {
+      "run_id": "run-fb431c81-d145-4ab1-bef1-1e83e5521196",
+      "session": "S-ode-stability",
+      "task_id": "ode-large-origin-diag",
+      "task_id_source": "nested_record_task_id",
+      "candidate": 1.000244140625,
+      "action": "ode_closed_naive",
+      "evidence_layer": "execution_result_record",
+      "verdict_class": "VERIFIED_INCORRECT",
+      "references": [
+        {
+          "file": "ode_stability_feec260053604a99bd12b37b25a40c2f.json",
+          "path": "cases[4].execute_fail",
+          "run_id": "run-fb431c81-d145-4ab1-bef1-1e83e5521196",
+          "kind": "execute",
+          "session": "S-ode-stability",
+          "task_id": "ode-large-origin-diag",
+          "action": "ode_closed_naive",
+          "candidate": 1.000244140625,
+          "verdict": "VERIFIED_INCORRECT",
+          "idempotent_hit": false
+        }
+      ]
+    }
+  ],
+  "task_attribution_independent_routes": [
+    {
+      "route": "root_direct_public_normal",
+      "run_id": "run-9653cf4d-fa6f-4f9a-8129-eb652c2d226f",
+      "code_inferred_task_id": "task-root-direct-x-1-cubed",
+      "code_evidence": "scicheck_task_cli.py _root_flow registers direct_id='task-root-direct-x-1-cubed' and calls execute_task(direct_id,'req-d','root_direct')",
+      "record_evidence": "acc_root_normal_20261015042620.json events[2].payload does NOT contain a nested task_id; the record's top-level task='task-root-x-1-cubed' is the ORIGINAL root task, not the independent direct-route task",
+      "recorded_task_id_in_index": "task-root-x-1-cubed"
+    },
+    {
+      "route": "ls_decimal_high_normal",
+      "run_id": "run-4028708f-cad8-4da6-bf34-57a97dd6fa2a",
+      "code_inferred_task_id": "task-ls-required-decimal-high",
+      "code_evidence": "scicheck_task_cli.py _lin_sys_flow registers high_id='task-ls-required-decimal-high' and calls execute_task(high_id,'req-1','ls_decimal_high')",
+      "record_evidence": "acc_linsys_normal_20261015042620.json events[2].payload does NOT contain a nested task_id; the record's top-level task='task-ls-required' is the ORIGINAL ls task, not the independent decimal-high-route task",
+      "recorded_task_id_in_index": "task-ls-required"
+    },
+    {
+      "route": "ls_decimal_high_ultra_tight",
+      "run_id": "run-e1390ec3-ce72-4855-96b8-9ce67408a185",
+      "code_inferred_task_id": "task-ls-ultra-tight-decimal-high",
+      "code_evidence": "scicheck_task_cli.py _lin_sys_ultra_tight_flow registers high_id='task-ls-ultra-tight-decimal-high' and calls execute_task(high_id,'req-1','ls_decimal_high')",
+      "record_evidence": "acc_linsys_ultra_tight_20261015042620.json events[1].payload does NOT contain a nested task_id; the record's top-level task='task-ls-ultra-tight' is the ORIGINAL ultra-tight ls task, not the independent decimal-high-route task",
+      "recorded_task_id_in_index": "task-ls-ultra-tight"
+    }
+  ],
+  "stop_reject_exception_index": {
+    "rejection_events": [
+      {
+        "file": "acc_linsys_no_unique_20261015042620.json",
+        "path": "events[0].payload",
+        "task_id": "task-ls-no-unique",
+        "session": null,
+        "run_id": null,
+        "event_type": "unsupported_no_candidate",
+        "reason": "no unique solution for this linear system (rank-deficient over the rationals): rank-deficient: no pivot available in the remaining block; the system has no unique solution -- UNSUPPORTED",
+        "count_basis": "events[i].payload.error with no run_id/candidate",
+        "classification_note": "pre-launch rejection due to math/format property, not a numeric failure, not a new run"
+      },
+      {
+        "file": "acc_linsys_ultra_tight_20261015042620.json",
+        "path": "events[0].payload",
+        "task_id": "task-ls-ultra-tight",
+        "session": null,
+        "run_id": null,
+        "event_type": "unsupported_no_candidate",
+        "reason": "the original tolerance cannot be met by any float64 value of the exact solution; this is a limit of the binary candidate FORMAT, not that the system has no unique solution -- UNSUPPORTED. Use the high-precision Decimal route (ls_decimal_high, registered as its own task/route) for a usable candidate under this tolerance.",
+        "count_basis": "events[i].payload.error with no run_id/candidate",
+        "classification_note": "pre-launch rejection due to math/format property, not a numeric failure, not a new run"
+      },
+      {
+        "file": "acc_cross_session_20261015042632.json",
+        "path": "rejections.s2_run_s1_task",
+        "task_id": null,
+        "session": null,
+        "run_id": null,
+        "event_type": "rejections_block",
+        "reason": "REJECTED: TaskNotFound: unknown task task-s1-only in session S2",
+        "count_basis": "rejections.s2_run_s1_task field",
+        "classification_note": "explicit rejection string, no candidate run"
+      },
+      {
+        "file": "acc_cross_session_20261015042632.json",
+        "path": "rejections.s2_unknown_task",
+        "task_id": null,
+        "session": null,
+        "run_id": null,
+        "event_type": "rejections_block",
+        "reason": "REJECTED: TaskNotFound: unknown task task-s2-never-registered in session S2",
+        "count_basis": "rejections.s2_unknown_task field",
+        "classification_note": "explicit rejection string, no candidate run"
+      },
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.tool_request_exhaustion",
+        "task_id": "acc-tool-exhaust",
+        "run_id": null,
+        "event_type": "tool_budget_exhaustion_rejection",
+        "reason": "BudgetExhausted: tool-request budget exhausted on task acc-tool-exhaust: cannot spend 1 (would exceed total 4; spent=4, reserved=0)",
+        "count_basis": "explicit rejection string in sections.tool_request_exhaustion.rejection",
+        "classification_note": "rejection: tool-request budget exhausted, not a numeric failure, not a new candidate run"
+      },
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.idempotency",
+        "task_id": "acc-idempotent",
+        "run_id": "run-290082a2-43ef-4492-890d-0f8d554d992a",
+        "event_type": "idempotency_conflict_rejection",
+        "reason": "RequestActionConflict: request_id 'req-1' in task 'acc-idempotent' already used with action 'quad_plain'; cannot switch to 'quad_breakpoints'",
+        "count_basis": "sections.idempotency.conflict_rejected: switching action on an already-used request_id is refused",
+        "classification_note": "rejection of a switch-to-different-action; the SAME run still carries its original verdict via its execution_result_record; this rejection does not create a new candidate run"
+      },
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.cross_task_cross_session.cross_task_verify_rejected",
+        "task_id": "acc-session-s1",
+        "run_id": null,
+        "event_type": "cross_task_or_cross_session_rejection",
+        "reason": "TaskNotFound: run run-290082a2-43ef-4492-890d-0f8d554d992a not found for task acc-cross-task",
+        "count_basis": "sections.cross_task_cross_session.cross_task_verify_rejected",
+        "classification_note": "rejection: TaskNotFound when a run/task is looked up in the wrong session or task; not a numeric failure, not a new candidate run"
+      },
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.cross_task_cross_session.cross_session_execute_rejected",
+        "task_id": "acc-session-s1",
+        "run_id": null,
+        "event_type": "cross_task_or_cross_session_rejection",
+        "reason": "TaskNotFound: unknown task acc-session-s1 in session S2",
+        "count_basis": "sections.cross_task_cross_session.cross_session_execute_rejected",
+        "classification_note": "rejection: TaskNotFound when a run/task is looked up in the wrong session or task; not a numeric failure, not a new candidate run"
+      },
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.restart_and_reopen",
+        "task_id": "acc-reopen-source",
+        "run_id": null,
+        "event_type": "terminal_task_new_solve_rejection",
+        "reason": "TaskAlreadyTerminal: task acc-reopen-source is terminal (INCOMPLETE); no new solves",
+        "count_basis": "sections.restart_and_reopen.terminal_no_new_solve",
+        "classification_note": "rejection: terminal task refuses a new solve; not a numeric failure, not a new candidate run"
+      },
+      {
+        "file": "acc_restart_20261015042635.json",
+        "path": "sections.missing_key_guard",
+        "task_id": null,
+        "run_id": null,
+        "event_type": "sealer_key_unavailable_rejection",
+        "reason": "SealerKeyUnavailable: trusted key file 'D:\\\\AcademicProjects\\\\2026_AI_plus_SG\\\\deployment\\\\workspace\\\\private_runs\\\\acc_restart_missing_key_20261015042635.receipt.key' is missing but the database at 'D:\\\\AcademicProjects\\\\2026_AI_plus_SG\\\\deployment\\\\workspace\\\\private_runs\\\\acc_restart_20261015042635.db' already contains data; a fresh key cannot verify the existing sealed receipts. Restore the original key first.",
+        "count_basis": "sections.missing_key_guard.refused",
+        "classification_note": "rejection: trusted sealer key unavailable, cannot verify existing sealed receipts; not a numeric failure, not a new candidate run"
+      }
+    ],
+    "execution_exceptions_without_candidate": [
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.injected_exception",
+        "task_id": "acc-injected-exception",
+        "run_id": null,
+        "reason": "TaskError: execution error on task acc-injected-exception: injected acceptance solver failure",
+        "count_basis": "sections.injected_exception.exception, candidate_is_null=true",
+        "classification_note": "injected execution exception; no candidate run recorded, NOT counted as a numeric pass or rejection"
+      }
+    ],
+    "terminal_state_observations": [
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.solve_budget_exhaustion",
+        "task_id": "acc-solve-exhaust",
+        "run_id": null,
+        "state": "INCOMPLETE",
+        "count_basis": "durable_solve_launches.spent=3/3",
+        "classification_note": "terminal-state observation (budget spent), NOT a rejection event, NOT a new candidate run"
+      },
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.tool_request_exhaustion",
+        "task_id": "acc-tool-exhaust",
+        "run_id": null,
+        "state": "INCOMPLETE",
+        "count_basis": "durable_tool_requests.spent=4/4",
+        "classification_note": "terminal-state observation accompanying the rejection"
+      },
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.restart_and_reopen",
+        "task_id": "acc-reopen-source",
+        "run_id": null,
+        "state": "INCOMPLETE",
+        "count_basis": "sections.restart_and_reopen.source_state (terminal state of the reopened-from task)",
+        "classification_note": "terminal-state observation of source task; paired with a rejection event above but recorded separately"
+      },
+      {
+        "file": "acc_budget_exhaust_20261015042633.json",
+        "path": "sections.restart_and_reopen",
+        "task_id": "acc-reopen-new",
+        "run_id": null,
+        "state": "ACTIVE",
+        "count_basis": "sections.restart_and_reopen.new_task_state (state of the fresh reopened task)",
+        "classification_note": "terminal-state observation of the reopened task; not a rejection event itself"
+      },
+      {
+        "file": "acc_restart_20261015042635.json",
+        "path": "sections.restore.restored.acc-restart-active",
+        "task_id": "acc-restart-active",
+        "run_id": null,
+        "state": "INCOMPLETE",
+        "count_basis": "sections.restore.restored.<task> terminal state after restart restore",
+        "classification_note": "terminal-state observation, NOT a rejection event, NOT a new candidate run"
+      },
+      {
+        "file": "acc_restart_20261015042635.json",
+        "path": "sections.restore.restored.acc-restart-terminal",
+        "task_id": "acc-restart-terminal",
+        "run_id": null,
+        "state": "VERIFIED_PASS",
+        "count_basis": "sections.restore.restored.<task> terminal state after restart restore",
+        "classification_note": "terminal-state observation, NOT a rejection event, NOT a new candidate run"
+      }
+    ],
+    "count_basis_note": "Rejection events carry an explicit rejection reason string in the record. Execution exceptions without a candidate are recorded separately and never counted as numeric passes or rejections. Terminal-state observations (budget spent, restored states, reopened states) are recorded separately and never counted as rejection calls unless the record itself contains an explicit rejection reason string at that path. Deduplication: each rejection reason string at a distinct JSON field path is counted once; where two fields in the same record describe the same conceptual rejection, the rejection event and the terminal observation are listed separately with an explicit pairing note rather than silently merged."
+  },
+  "checks": {
+    "input_file_count": 11,
+    "input_file_hashes_match_precomputed": true,
+    "all_run_ids_in_references_present_in_index": true,
+    "distinct_run_ids_total": 26,
+    "evidence_layers_mutually_exclusive": true,
+    "layer_counts_sum_equals_total": true,
+    "verdict_counts_by_layer_reconcilable": true,
+    "rejection_events_count": 10,
+    "execution_exceptions_without_candidate_count": 1,
+    "terminal_state_observations_count": 6,
+    "three_independent_route_task_attribution_recorded": true,
+    "candidate_zero_preserved_for_run_c8181bcd": true,
+    "reproducible_generation": true
+  },
+  "fee": "UNKNOWN",
+  "model_calls_this_round": 0,
+  "out_of_scope_pending": [
+    "page_fixes",
+    "browser_verification",
+    "delivery_directory_packaging",
+    "scientific_rerun"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "domain": ["-1", "10000"],
+  "problem": {
+    "type": "piecewise_const",
+    "segments": [
+      ["-1", "0", "1"],
+      ["0", "10000", "0"]
+    ]
+  },
+  "tolerance": {
+    "absolute": "1/10000000000",
+    "relative": "0"
+  }
+}

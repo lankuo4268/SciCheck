@@ -1,0 +1,113 @@
+{
+  "note": "Existing AGH workspace source copied byte-for-byte for public delivery; no business implementation edits in this packaging step.",
+  "files": [
+    {
+      "path": "source/scicheck.py",
+      "agh_workspace_source": "scicheck.py",
+      "sha256": "c8cd5f4b4777c1c92cd38a66ce4f250196e79e6d9594d10680cc560d64373580",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/scicheck_cli.py",
+      "agh_workspace_source": "scicheck_cli.py",
+      "sha256": "723755b79ef8cc09c1731ffe19bc388cd5b8d64e412cf7616ce9dc10210027af",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/scicheck_task_cli.py",
+      "agh_workspace_source": "scicheck_task_cli.py",
+      "sha256": "9bd268103fb89dda8bed6fe4b8ee75f17632fc7025ba43de3b2ee01fb0da57f7",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/task_controller.py",
+      "agh_workspace_source": "task_controller.py",
+      "sha256": "60fafd4bac0177b37f704c9e21f37ab8571a2c439b0a061364d4787025174512",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/task_store.py",
+      "agh_workspace_source": "task_store.py",
+      "sha256": "02e19b9d3f436fd19f3f1fadda611e2c647101fc8d4a6acf260565b496e3c3b4",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/task_budget.py",
+      "agh_workspace_source": "task_budget.py",
+      "sha256": "96f1a5cbe65be1bc9c46883ebc487995e254ee0f171878fd4f43d52e58f03704",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/task_persistence.py",
+      "agh_workspace_source": "task_persistence.py",
+      "sha256": "74b274d1420a5012923d01d3adebb42da05bd3452d27a6f68d67a83c7be2d69a",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/receipt_seal.py",
+      "agh_workspace_source": "receipt_seal.py",
+      "sha256": "b207c985a1c251eea850dbc46b356003f28d3f7b7a3a2fe85db78f2f40411eb9",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/method_registry.py",
+      "agh_workspace_source": "method_registry.py",
+      "sha256": "4c893b2e7ce19754601341ab441a5451174d54987bf724b9720bc004178bec9d",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/run_ode_examples.py",
+      "agh_workspace_source": "run_ode_examples.py",
+      "sha256": "0bcfa66c80f0836c094bbd9ee12d2dac3c937a5f17efc143f4db70c7f3205294",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/test_scicheck.py",
+      "agh_workspace_source": "test_scicheck.py",
+      "sha256": "0ee6d0ddd2efae11b6d1ef04c82f53de2f18c728c938d776fdca2e558cfd595b",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/test_scicheck_task.py",
+      "agh_workspace_source": "test_scicheck_task.py",
+      "sha256": "a2f56663685e633a4075c90cd6e7d2f17aaf5f0ca043877ccecd3bbb628a9ff0",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/test_scicheck_task_budget.py",
+      "agh_workspace_source": "test_scicheck_task_budget.py",
+      "sha256": "e693a29bfc601c9a96e812eb68f4ce5eda91075c91d22efe1e97be3c4cf44e49",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/agh_business_bridge.py",
+      "agh_workspace_source": "agh_business_bridge.py",
+      "sha256": "2365cae8d2e2b5cb132076eedbf3707c0abe2bdd554ac591d74af1aa4c758eef",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/agh_register_local_qa.py",
+      "agh_workspace_source": "agh_register_local_qa.py",
+      "sha256": "9fc15e8a7cfc9f168913d6d277bc083429381dff4ff98bf274eb7f52d19f78a4",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/agh_register_narrow2_qa.py",
+      "agh_workspace_source": "agh_register_narrow2_qa.py",
+      "sha256": "217868cc43f4981c8b15fc79c611da745738c5dd06507a18af0b9faaa87b21cd",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/agh-plugin/index.mjs",
+      "agh_workspace_source": "agh-plugin/index.mjs",
+      "sha256": "b0e13eb8886e7d827110edab1e7e099891b9a7e6a5b5b604d41cd37b9c5d4725",
+      "copied_without_changes": true
+    },
+    {
+      "path": "source/agh-plugin/package.json",
+      "agh_workspace_source": "agh-plugin/package.json",
+      "sha256": "d802a7a28aba2e70028f16637ff605bdba292488e2112a418d02b1545c25fe8a",
+      "copied_without_changes": true
+    }
+  ]
+}

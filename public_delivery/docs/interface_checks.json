@@ -1,0 +1,564 @@
+{
+  "origin": "PRESENTATION_ONLY_BROWSER_QA",
+  "model_calls": 0,
+  "solver_calls": 0,
+  "checks": [
+    {
+      "name": "1440_nine_cases",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_offline_notice",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_integration_pass_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_integration_pass_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_integration_pass_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_integration_pass_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_integration_pass_export_exact",
+      "pass": true
+    },
+    {
+      "name": "1440_root_pass_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_root_pass_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_root_pass_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_root_pass_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_root_pass_export_exact",
+      "pass": true
+    },
+    {
+      "name": "1440_linsys_pass_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_linsys_pass_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_linsys_pass_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_linsys_pass_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_linsys_pass_export_exact",
+      "pass": true
+    },
+    {
+      "name": "1440_ode_stability_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_ode_stability_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_ode_stability_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_ode_stability_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_ode_stability_export_exact",
+      "pass": true
+    },
+    {
+      "name": "1440_capability_boundary_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_capability_boundary_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_capability_boundary_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_capability_boundary_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_capability_boundary_export_exact",
+      "pass": true
+    },
+    {
+      "name": "1440_budget_exhaustion_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_budget_exhaustion_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_budget_exhaustion_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_budget_exhaustion_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_budget_exhaustion_export_exact",
+      "pass": true
+    },
+    {
+      "name": "1440_injected_exception_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_injected_exception_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_injected_exception_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_injected_exception_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_injected_exception_export_exact",
+      "pass": true
+    },
+    {
+      "name": "1440_agh_host_rejection_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_agh_host_rejection_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_agh_host_rejection_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_agh_host_rejection_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_agh_host_rejection_export_exact",
+      "pass": true
+    },
+    {
+      "name": "1440_agh_host_fail_then_fix_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_agh_host_fail_then_fix_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_agh_host_fail_then_fix_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_agh_host_fail_then_fix_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_agh_host_fail_then_fix_export_exact",
+      "pass": true
+    },
+    {
+      "name": "1440_ode_group_0_matched",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_ode_group_1_matched",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_ode_group_2_matched",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_play_advances",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_switch_stops_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_pause_stops_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_lookup_not_numeric_pass",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_focus_mode",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "1440_clipboard_failure_feedback",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_nine_cases",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_offline_notice",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_integration_pass_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_integration_pass_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_integration_pass_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_integration_pass_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_integration_pass_export_exact",
+      "pass": true
+    },
+    {
+      "name": "390_root_pass_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_root_pass_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_root_pass_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_root_pass_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_root_pass_export_exact",
+      "pass": true
+    },
+    {
+      "name": "390_linsys_pass_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_linsys_pass_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_linsys_pass_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_linsys_pass_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_linsys_pass_export_exact",
+      "pass": true
+    },
+    {
+      "name": "390_ode_stability_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_ode_stability_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_ode_stability_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_ode_stability_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_ode_stability_export_exact",
+      "pass": true
+    },
+    {
+      "name": "390_capability_boundary_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_capability_boundary_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_capability_boundary_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_capability_boundary_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_capability_boundary_export_exact",
+      "pass": true
+    },
+    {
+      "name": "390_budget_exhaustion_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_budget_exhaustion_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_budget_exhaustion_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_budget_exhaustion_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_budget_exhaustion_export_exact",
+      "pass": true
+    },
+    {
+      "name": "390_injected_exception_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_injected_exception_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_injected_exception_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_injected_exception_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_injected_exception_export_exact",
+      "pass": true
+    },
+    {
+      "name": "390_agh_host_rejection_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_agh_host_rejection_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_agh_host_rejection_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_agh_host_rejection_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_agh_host_rejection_export_exact",
+      "pass": true
+    },
+    {
+      "name": "390_agh_host_fail_then_fix_selected",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_agh_host_fail_then_fix_no_overflow",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_agh_host_fail_then_fix_hash",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_agh_host_fail_then_fix_controls_no_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_agh_host_fail_then_fix_export_exact",
+      "pass": true
+    },
+    {
+      "name": "390_ode_group_0_matched",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_ode_group_1_matched",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_ode_group_2_matched",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_play_advances",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_switch_stops_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_pause_stops_timer",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_lookup_not_numeric_pass",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_focus_mode",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "390_clipboard_failure_feedback",
+      "pass": true,
+      "observed": true
+    },
+    {
+      "name": "no_runtime_errors",
+      "pass": true,
+      "observed": []
+    },
+    {
+      "name": "no_http_requests",
+      "pass": true
+    }
+  ],
+  "page_sha256": "1524dff39e373792571c0bbd62e4e223acb96d64eb5a2b74b037902babdc8953",
+  "all_pass": true,
+  "limitations": [
+    "Chrome desktop emulation at 1440px and 390px; not a physical-device or all-browser test.",
+    "Clipboard failure tested with rejected API; native permission combinations not exhaustively tested."
+  ]
+}

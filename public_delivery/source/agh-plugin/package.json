@@ -1,0 +1,17 @@
+{
+  "name": "@ai-plus-sg/scicheck-business-tools",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "exports": "./index.mjs",
+  "agnes": {
+    "plugins": [
+      {
+        "export": "main",
+        "id": "ext:ai-plus-sg/scicheck-business-tools",
+        "inject": ["extension"]
+      }
+    ]
+  }
+}
