@@ -18,7 +18,7 @@ python source/scicheck_cli.py examples/piecewise_narrow_contrib.json --compare
 python -B -m unittest discover -s source -v
 ```
 
-这两条Python运行命令会执行本地求解或测试，不等于AGH宿主调用。任务式示例可能生成本地数据库和密钥，不应上传这些生成文件。
+
 
 ## 已有记录与口径
 
@@ -48,8 +48,6 @@ python -B -m unittest discover -s source -v
 - 候选路线使用NumPy/SciPy；独立参考使用结构化解析计算、Fraction或受支持ODE的Decimal包络。第三方组件遵循各自许可证，本次未另行授予项目级许可证。
 - 插件源码位于source/agh-plugin/；仓库不附AGH运行时、真实绑定或账户。安装、信任、启用和受信任务登记需在本机AGH另行配置。
 - 科学模式的宿主模型请求预算强制钩子、非业务工具限制与操作系统隔离尚未完整验证；实际费用保持UNKNOWN。
-- 页面及AI整理JSON不能替代AGH界面手动导出的官方轨迹。
 
-## 赛事材料状态
 
-官方轨迹由参赛者在AGH界面手动导出；3–5分钟视频由参赛者录制并上传。视频链接和官方轨迹本版本尚未附入仓库，不将待办写成已提交。评审材料中请提供可访问链接及显示平台实际发布日期的截图。
+
